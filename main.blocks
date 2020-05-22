@@ -1,0 +1,93 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="ko,T)2G%;1sT24,}rGTI">Player</variable><variable type="KIND_SpriteKind" id="@}$xncI_ei6ngTkV[e%5">Projectile</variable><variable type="KIND_SpriteKind" id="+Dx1lG9^(KmQv$o`|7G8">Food</variable><variable type="KIND_SpriteKind" id=".d0+fB6w$iYEN1gj4Jz;">Enemy</variable><variable id="|Xn.K2_NIjG$a0(UWTMM">blue</variable><variable id="yE(WMPi-D,_j91YS|]Q4">red</variable><variable id="fr`z%Z!In2(OoIdjQo-0">green</variable><variable id="=xEh=d/$I^sBmEQawL2Q">yellow</variable><variable id="5tSze^W_5(![aP?I:Hv-">mySprite</variable><variable id="v|$ClJ3,3!T|1UMnL:+?">simon</variable></variables><block type="function_definition" x="0" y="16"><mutation name="colorKey" functionid="~;F8PG,{*TXB?[/YvE2a"/><field name="function_name">colorKey</field></block><block type="pxt-on-start" x="80" y="235"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">1</field></shadow></value><next><block type="variables_set"><field name="VAR" id="yE(WMPi-D,_j91YS|]Q4">red</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . f f f f f f f f f f 
+. . . . . . . f f f f 2 2 2 f f f f 
+. . . . . f f f 2 2 2 2 2 2 f f f f 
+. . . . f f f 2 2 2 2 2 2 2 f f f f 
+. . . f f 2 2 2 2 2 2 2 2 2 f f f f 
+. . f f 2 2 2 2 2 2 2 2 2 2 f f f f 
+. f f 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f f 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f f 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f 2 2 2 2 2 2 2 2 2 2 2 2 2 f f f f 
+f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="yE(WMPi-D,_j91YS|]Q4">red</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">50</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">44</field></shadow></value><next><block type="variables_set"><field name="VAR" id="|Xn.K2_NIjG$a0(UWTMM">blue</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f f f f f f f f f f f f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 8 f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 8 f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 8 f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 8 f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 8 f . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 f . . 
+f 8 8 8 8 8 8 8 8 8 8 8 8 f . . 
+f 8 8 8 8 8 8 8 8 8 8 8 f . . . 
+f 8 8 8 8 8 8 8 8 8 8 f . . . . 
+f 8 8 8 8 8 8 8 8 8 f . . . . . 
+f 8 8 8 8 8 8 8 8 f . . . . . . 
+f 8 8 8 8 8 8 f f . . . . . . . 
+f 8 8 8 8 8 f . . . . . . . . . 
+f 8 8 f f f . . . . . . . . . . 
+f f f . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="|Xn.K2_NIjG$a0(UWTMM">blue</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">66</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">60</field></shadow></value><next><block type="variables_set"><field name="VAR" id="fr`z%Z!In2(OoIdjQo-0">green</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f . . . . . . . . . . . . 
+f 7 7 7 f f f . . . . . . . . . 
+f 7 7 7 7 7 7 f . . . . . . . . 
+f 7 7 7 7 7 7 7 f f . . . . . . 
+f 7 7 7 7 7 7 7 7 7 f . . . . . 
+f 7 7 7 7 7 7 7 7 7 7 f . . . . 
+f 7 7 7 7 7 7 7 7 7 7 7 f . . . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 f . . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 f . . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f 7 7 7 7 7 7 7 7 7 7 7 7 7 f . 
+f f f f f f f f f f f f f f f . 
+f f f f f f f f f f f f f f f . 
+f f f f f f f f f f f f f f f . 
+f f f f f f f f f f f f f f f . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="fr`z%Z!In2(OoIdjQo-0">green</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">66</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">44</field></shadow></value><next><block type="variables_set"><field name="VAR" id="=xEh=d/$I^sBmEQawL2Q">yellow</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+f f f f f f f f f f f f f f f f f f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+. . f 5 5 5 5 5 5 5 5 5 5 5 f f f f 
+. . . f 5 5 5 5 5 5 5 5 5 5 f f f f 
+. . . f 5 5 5 5 5 5 5 5 5 5 f f f f 
+. . . . f 5 5 5 5 5 5 5 5 5 f f f f 
+. . . . . f 5 5 5 5 5 5 5 5 f f f f 
+. . . . . . f 5 5 5 5 5 5 5 f f f f 
+. . . . . . . f 5 5 5 5 5 5 f f f f 
+. . . . . . . . f f 5 5 5 5 f f f f 
+. . . . . . . . . f f f f f f f f f 
+. . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="=xEh=d/$I^sBmEQawL2Q">yellow</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">50</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">60</field></shadow></value><next><block type="variables_set"><field name="VAR" id="v|$ClJ3,3!T|1UMnL:+?">simon</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . f f f f f f f f f . . . . 
+. . f f f f f f f f f f f . . . 
+. . f f f f f f f f f f f . . . 
+. f f f f 1 f f f 1 f f f f . . 
+. f f f f f f f f f f f f f . . 
+. f f f f f f f f f f f f f . . 
+. f f f 1 f f f f f 1 f f f . . 
+. f f f f 1 f f f 1 f f f f . . 
+. . f f f f 1 1 1 f f f f . . . 
+. . f f f f f f f f f f f . . . 
+. . . f f f f f f f f f . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="v|$ClJ3,3!T|1UMnL:+?">simon</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">58</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">52</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
